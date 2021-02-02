@@ -1,0 +1,2 @@
+com/vetInfor/vet/Info/VetInfoApplicationTests.java
+ com.vetInfor.vet.Info.VetInfoApplicationTests
