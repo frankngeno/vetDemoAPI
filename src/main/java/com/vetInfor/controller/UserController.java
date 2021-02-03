@@ -54,6 +54,7 @@ public class UserController {
     public ResponseEntity <User> updateUser(@PathVariable Long id, @RequestBody User userDetail) throws Exception {
         User user=userRepo.findById(id).orElseThrow(() -> new Exception("User not found with "+ id));
         user.setUsername(userDetail.getUsername());
+        user.setFirstName(userDetail.getFirstName());
         user.setLastName(userDetail.getLastName());
         user.setEmail(userDetail.getEmail());
         userRepo.save(userDetail);
